@@ -1,3 +1,5 @@
+@import '../Mixin.scss';
+
 .package {
   display: flex;
   flex-direction: column;
@@ -9,61 +11,33 @@
   border-radius: 12px;
   box-sizing: border-box;
   margin: 0 40px;
-  // &:nth-of-type(3n) {
-  //   margin-right: 0;
-  // }
   &__info {
     display: flex;
     flex-direction: column;
     margin: 21px auto 0 51px;
   }
   &__title {
-    font-family: 'Trebuchet MS';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #666666;
+    @include fontProps('Trebuchet MS', normal, 400, 16px,  19px, #666666);
     z-index: 2;
     margin: 0 auto 5px 0;
   }
   &__name {
-    font-family: 'Trebuchet MS';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 56px;
-    color: #000000;
+    @include fontProps('Trebuchet MS', normal, 700, 48px,  56px, #000000);
     z-index: 2;
     margin: 0 auto 0 0;
   }
   &__taste {
-    font-family: 'Trebuchet MS';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    color: #000000;
+    @include fontProps('Trebuchet MS', normal, 700, 24px,  28px, #000000);
     z-index: 2;
     margin: 0 auto 15px 0;
   }
   &__size {
-    font-family: 'Trebuchet MS';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    color: #666666;
+    @include fontProps('Trebuchet MS', normal, 700, 14px,  16px, #666666);
     z-index: 2;
     margin: 0;
   }
   &__gift {
-    font-family: 'Trebuchet MS';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    color: #666666;
+    @include fontProps('Trebuchet MS', normal, 700, 14px,  16px, #666666);
     z-index: 2;
     margin: 0;
   }
@@ -76,6 +50,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     position: absolute;
     right: 16px;
     bottom: 16px;
@@ -83,22 +58,12 @@
     height: 80px;
     background-color: #1698D9;
     border-radius: 50%;
-    font-family: 'Trebuchet MS';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 42px;
-    line-height: 22px;
-    text-align: center;
-    color: #FFFFFF;
+    @include fontProps('Trebuchet MS', normal, 400, 42px,  22px, #FFFFFF);
     z-index: 2;
     margin: 0;
     & span {
-      font-family: Trebuchet MS;
-      font-size: 21px;
-      font-weight: 400;
-      line-height: 22px;
-      letter-spacing: 0px;
-      margin-top: 5px;
+      @include fontProps('Trebuchet MS', normal, 400, 21px,  22px, #FFFFFF);
+      margin-top: 8px;
     }
   }
 }
