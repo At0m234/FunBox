@@ -1,0 +1,21 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  background-image: url(../../images/App/App__bg.svg);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  text-rendering: optimizeLegibility;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+}
+
+

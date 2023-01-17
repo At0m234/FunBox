@@ -1,0 +1,111 @@
+.package {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 320px;
+  height: 480px;
+  background: #F2F2F2;
+  border: 4px solid #1698D9;
+  border-radius: 12px;
+  box-sizing: border-box;
+  margin: 0 40px;
+  // &:nth-of-type(3n) {
+  //   margin-right: 0;
+  // }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    margin: 21px auto 0 51px;
+  }
+  &__title {
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #666666;
+    z-index: 2;
+    margin: 0 auto 5px 0;
+  }
+  &__name {
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: #000000;
+    z-index: 2;
+    margin: 0 auto 0 0;
+  }
+  &__taste {
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    z-index: 2;
+    margin: 0 auto 15px 0;
+  }
+  &__size {
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #666666;
+    z-index: 2;
+    margin: 0;
+  }
+  &__gift {
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #666666;
+    z-index: 2;
+    margin: 0;
+  }
+  &__img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  &__weight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    width: 80px;
+    height: 80px;
+    background-color: #1698D9;
+    border-radius: 50%;
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    z-index: 2;
+    margin: 0;
+    & span {
+      font-family: Trebuchet MS;
+      font-size: 21px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0px;
+      margin-top: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .package {
+    margin-bottom:50px;
+  }
+}
+
