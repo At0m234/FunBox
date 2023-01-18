@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/FunBox/static/css/main.a2a60fa6.css",
+    "main.css": "/FunBox/static/css/main.86ec15a7.css",
     "main.js": "/FunBox/static/js/main.53515ca3.js",
     "static/js/787.196cadc5.chunk.js": "/FunBox/static/js/787.196cadc5.chunk.js",
     "static/media/PackageImg.svg": "/FunBox/static/media/PackageImg.79cf8d0086ef985dec66208943dcf6b6.svg",
@@ -9,12 +9,12 @@
     "static/media/Exo2.0-Thin.otf": "/FunBox/static/media/Exo2.0-Thin.51c257bfa8ec3e0cfb4b.otf",
     "static/media/App__bg.svg": "/FunBox/static/media/App__bg.1dafcd2d49be28232f03.svg",
     "index.html": "/FunBox/index.html",
-    "main.a2a60fa6.css.map": "/FunBox/static/css/main.a2a60fa6.css.map",
+    "main.86ec15a7.css.map": "/FunBox/static/css/main.86ec15a7.css.map",
     "main.53515ca3.js.map": "/FunBox/static/js/main.53515ca3.js.map",
     "787.196cadc5.chunk.js.map": "/FunBox/static/js/787.196cadc5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2a60fa6.css",
+    "static/css/main.86ec15a7.css",
     "static/js/main.53515ca3.js"
   ]
 }
