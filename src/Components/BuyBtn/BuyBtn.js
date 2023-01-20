@@ -7,8 +7,7 @@ function BuyBtn (props) {
       ? <span>{props.disabledMessage}</span>
       : (props.active)
       ? <span>{props.message}</span> 
-      : <span>Чего сидишь? порадуй котэ,
-          <button className='buy' onClick={props.onClick}>купи</button>
+      : <span>Чего сидишь?Порадуй котэ,<button className='buy' onClick={props.onClick}>купи</button>
         </span>
       }
       {}
