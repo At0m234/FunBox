@@ -5,4 +5,9 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+  padding: 0;
+  text-decoration: underline dotted #1698D9;
+  & span {
+    text-decoration: none;
+  }
 }
