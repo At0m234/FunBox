@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   &__container {
     display: flex;
     flex-direction: column;
@@ -16,6 +17,9 @@
     clip-path: polygon(0% 9.375%, 14% 0%, 100% 0%, 100% 100%, 0% 100%);
     box-sizing: border-box;
     margin: 0 40px;
+    cursor: pointer;
+    border: 4px solid #1698D9;
+
     &:before {
       content: '';
       display: block;
@@ -27,45 +31,73 @@
       transform: rotate(-45deg);
       background-color: #1698D9;
     }
+
+    &_active {
+      border: 4px solid #D91667;
+
+      &:before {
+        background-color: #D91667;
+      }
+    }
+
+    &_disabled {
+      filter: contrast(.3);
+      cursor: auto;
+      border: 4px solid #B3B3B3;
+      &:before {
+        background-color: #B3B3B3;
+      }
+    }
   }
+
   &__info {
     display: flex;
     flex-direction: column;
     margin: 21px auto 0 51px;
   }
+
   &__title {
-    @include fontProps('Trebuchet MS', normal, 400, 16px,  19px, #666666);
+    @include fontProps('Trebuchet MS', normal, 400, 16px, 19px, #666666);
     z-index: 2;
     margin: 0 auto 5px 0;
+    &_active{
+      color: #D91667;
+    }
   }
+
   &__name {
-    @include fontProps('Trebuchet MS', normal, 700, 48px,  56px, #000000);
+    @include fontProps('Trebuchet MS', normal, 700, 48px, 56px, #000000);
     z-index: 2;
     margin: 0 auto 0 0;
   }
+
   &__taste {
-    @include fontProps('Trebuchet MS', normal, 700, 24px,  28px, #000000);
+    @include fontProps('Trebuchet MS', normal, 700, 24px, 28px, #000000);
     z-index: 2;
     margin: 0 auto 15px 0;
   }
+
   &__composition {
-    @include fontProps('Trebuchet MS', normal, 700, 14px,  16px, #666666);
+    @include fontProps('Trebuchet MS', normal, 700, 14px, 16px, #666666);
     z-index: 2;
     margin: 0;
     list-style: none;
     padding: 0;
   }
+
   &__size {
-    @include fontProps('Trebuchet MS', normal, 700, 14px,  16px, #666666);
+    @include fontProps('Trebuchet MS', normal, 700, 14px, 16px, #666666);
     z-index: 2;
     margin: 0;
     list-style: none;
   }
+
   &__img {
     position: absolute;
     left: 0;
     bottom: 0;
   }
+
   &__weight {
     display: flex;
     flex-direction: column;
@@ -77,23 +109,38 @@
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    @include fontProps('Trebuchet MS', normal, 400, 42px,  22px, #FFFFFF);
+    @include fontProps('Trebuchet MS', normal, 400, 42px, 22px, #FFFFFF);
     z-index: 2;
     margin: 0;
+    background-color: #1698D9;
+
+    &_active {
+      background-color: #D91667;
+    }
+
+    &_disabled {
+      background-color: #B3B3B3;
+    }
+
     & span {
-      @include fontProps('Trebuchet MS', normal, 400, 21px,  22px, #FFFFFF);
+      @include fontProps('Trebuchet MS', normal, 400, 21px, 22px, #FFFFFF);
       margin-top: 8px;
     }
   }
+
   &__text {
     margin: 14px 0 0 0;
-    @include fontProps('Trebuchet MS', normal, 400, 13px,  15px, #FFFFFF);
+    @include fontProps('Trebuchet MS', normal, 400, 13px, 15px, #FFFFFF);
+    
+    &_disabled {
+      @include fontProps('Trebuchet MS', normal, 400, 13px, 15px, #FFFF66);
+    }
   }
 }
 
 @media screen and (max-width: 1200px) {
   .package {
-    margin-bottom:50px;
+    margin-bottom: 50px;
   }
 }
 

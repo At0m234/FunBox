@@ -2,7 +2,17 @@ import './BuyBtn.scss';
 
 function BuyBtn (props) {
   return (
-    <button className='buy' onClick={props.onClick}>купи</button>
+    <>
+      {(props.disabled) 
+      ? <span>{props.disabledMessage}</span>
+      : (props.active)
+      ? <span>{props.message}</span> 
+      : <span>Чего сидишь? порадуй котэ,
+          <button className='buy' onClick={props.onClick}>купи</button>
+        </span>
+      }
+      {}
+    </>
   )
 } 
 
