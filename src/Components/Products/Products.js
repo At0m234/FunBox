@@ -2,7 +2,7 @@ import './Products.scss';
 import Package from '../Package/Package';
 import initialArray from '../utils/constants';
 
-function Products(props) {
+function Products() {
   return (
     <section className='products'>
       <h1 className='products__title'>Ты сегодня покормил кота?</h1>
